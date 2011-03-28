@@ -2,7 +2,7 @@
 $(call inherit-product, device/htc/dream_sapphire/full_dream_sapphire.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cyanogen/products/common.mk)
+$(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
 # Include GSM-only stuff
 $(call inherit-product, vendor/cyanogen/products/gsm.mk)
@@ -44,7 +44,7 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC0-DS
+            ro.modversion=CyanogenMod-7.0.0-RC3-DS
     else
         PRODUCT_PROPERTY_OVERRIDES += \
             ro.modversion=CyanogenMod-CARZ-7.0.0-RC3-DS
