@@ -2,7 +2,7 @@
 $(call inherit-product, device/htc/dream_sapphire/full_dream_sapphire.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cyanogen/products/common.mk)
+$(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
 # Include GSM-only stuff
 $(call inherit-product, vendor/cyanogen/products/gsm.mk)
@@ -21,6 +21,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRI40 BUILD_FING
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_msm_defconfig
+
+PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-hero.map
 
 # Extra DS overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/dream_sapphire
@@ -42,10 +44,10 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC0-DS
+            ro.modversion=CyanogenMod-7.0.0-RC3-DS
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC0-DS-KANG
+            ro.modversion=CyanogenMod-CARZ-7.0.0-RC3-DS
     endif
 endif
 
