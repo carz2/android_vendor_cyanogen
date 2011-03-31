@@ -38,18 +38,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #
 # Set ro.modversion
 #
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-DS
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC3-DS
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-CARZ-7-$(shell date +%m%d%Y)-NIGHTLY-DS
-    endif
-endif
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.modversion=CyanogenMod-CyanogenCARZ-7-RC4-6355Sapphire
+#ro.modversion=CyanogenMod-CyanogenCARZ-7-$(shell date +%m%d%Y)-NIGHTLY-DS
 
 # Use the audio profile hack
 WITH_DS_HTCACOUSTIC_HACK := true
