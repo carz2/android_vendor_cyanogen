@@ -22,7 +22,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRI40 BUILD_FING
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_msm_defconfig
 
-PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-hero.map
+PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/device/htc/dream_sapphire/prelink-linux-arm-sapphire6355.map
 
 # Extra DS overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/dream_sapphire
@@ -31,16 +31,13 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/dream_sapphire
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/dream_sapphire/etc/init.d/02audio_profile:system/etc/init.d/02audio_profile
 
-# Disable Compcache by default on 6355sapphire
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.compcache.default=0
-
 #
 # Set ro.modversion
 #
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=CyanogenMod-CyanogenCARZ-7-$(shell date +%m%d%Y)-NIGHTLY-DS
-#ro.modversion=CyanogenMod-CyanogenCARZ-7-RC4-6355Sapphire
+	ro.modversion=CyanogenMod-CyanogenCARZ-7-$(shell date +%m%d%Y)-6355Sapphire
+  #  ro.modversion=CyanogenMod-CyanogenCARZ-7-$(shell date +%m%d%Y)-NIGHTLY-DS
+
 
 # Use the audio profile hack
 WITH_DS_HTCACOUSTIC_HACK := true
