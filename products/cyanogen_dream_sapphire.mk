@@ -15,7 +15,7 @@ PRODUCT_BRAND := google
 PRODUCT_DEVICE := dream_sapphire
 PRODUCT_MODEL := Dream/Sapphire
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRI40 BUILD_FINGERPRINT=tmobile/opal/sapphire/sapphire:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="opal-user 2.2.1 FRG83 60505 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=tmobile/opal/sapphire/sapphire:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="opal-user 2.2.1 FRG83 60505 release-keys"
 
 # Build kernel
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
@@ -35,7 +35,7 @@ PRODUCT_COPY_FILES += \
 # Set ro.modversion
 #
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.modversion=CyanogenMod-CyanogenCARZ-7-$(shell date +%m%d%Y)-6355Sapphire
+	ro.modversion=CyanogenMod-CyanogenCARZ-7.1.0-$(shell date +%m%d%Y)-6355Sapphire
 #        ro.modversion=CyanogenMod-CyanogenCARZ-7-$(shell date +%m%d%Y)-NIGHTLY-DS
 
 
