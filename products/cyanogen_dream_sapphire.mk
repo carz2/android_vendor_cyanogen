@@ -27,6 +27,9 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/device/htc/dream_sapphir
 # Extra DS overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/dream_sapphire
 
+# Add the CMWallpapers app
+PRODUCT_PACKAGES += CMWallpapers
+
 # This file is used to install the correct audio profile when booted
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/dream_sapphire/etc/init.d/02audio_profile:system/etc/init.d/02audio_profile
