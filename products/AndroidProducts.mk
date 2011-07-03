@@ -10,11 +10,13 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_crespo4g.mk \
     $(LOCAL_DIR)/cyanogen_desirec.mk \
     $(LOCAL_DIR)/cyanogen_dream_sapphire.mk \
+    $(LOCAL_DIR)/cyanogen_droid2.mk \
     $(LOCAL_DIR)/cyanogen_encore.mk \
     $(LOCAL_DIR)/cyanogen_espresso.mk \
     $(LOCAL_DIR)/cyanogen_hero.mk \
     $(LOCAL_DIR)/cyanogen_heroc.mk \
     $(LOCAL_DIR)/cyanogen_inc.mk \
+    $(LOCAL_DIR)/cyanogen_jordan.mk \
     $(LOCAL_DIR)/cyanogen_galaxysmtd.mk \
     $(LOCAL_DIR)/cyanogen_generic.mk \
     $(LOCAL_DIR)/cyanogen_glacier.mk \
@@ -27,6 +29,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_p990.mk \
     $(LOCAL_DIR)/cyanogen_p999.mk \
     $(LOCAL_DIR)/cyanogen_passion.mk \
+    $(LOCAL_DIR)/cyanogen_shadow.mk \
     $(LOCAL_DIR)/cyanogen_sholes.mk \
     $(LOCAL_DIR)/cyanogen_smb_a1002.mk \
     $(LOCAL_DIR)/cyanogen_smb_a1004.mk \
@@ -38,6 +41,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_vega.mk \
     $(LOCAL_DIR)/cyanogen_vibrantmtd.mk \
     $(LOCAL_DIR)/cyanogen_vision.mk \
+    $(LOCAL_DIR)/cyanogen_vivo.mk \
     $(LOCAL_DIR)/cyanogen_z71.mk \
     $(LOCAL_DIR)/cyanogen_zeppelin.mk \
     $(LOCAL_DIR)/cyanogen_zero.mk
