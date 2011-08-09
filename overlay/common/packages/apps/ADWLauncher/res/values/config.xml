@@ -18,12 +18,13 @@
     <bool name="config_fadeDrawerLabels">true</bool>
     <bool name="config_nagScreen">false</bool>
     <bool name="config_new_selectors">true</bool>
+    <bool name="config_desktop_indicator">false</bool>
     <integer name="config_desktopBounce">30</integer>
-    <integer name="config_desktopSpeed">600</integer>
+    <integer name="config_desktopSpeed">300</integer>
     <integer name="config_drawer_color">0x80000000</integer>
     <integer name="config_drawerColumnsPortrait">4</integer>
     <integer name="config_drawerColumnsLandscape">5</integer>
-    <integer name="config_zoomSpeed">200</integer>
+    <integer name="config_zoomSpeed">50</integer>
     <string name="config_swipedown_actions">0</string>
     <string name="config_swipeup_actions">0</string>
     <string name="config_homeBinding">1</string>
