@@ -25,7 +25,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=GRH78 BUILD_DISPLAY_ID=GRJ90 BUILD_FING
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/device/htc/dream_sapphire/prelink-linux-arm-sapphire6355.map
 
 # Extra DS overlay
-#PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/dream_sapphire
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/dream_sapphire
 
 # Add the CMWallpapers app
 PRODUCT_PACKAGES += CMWallpapers
