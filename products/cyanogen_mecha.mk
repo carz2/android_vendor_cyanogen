@@ -12,7 +12,7 @@ PRODUCT_BRAND := verizon_wwe
 PRODUCT_DEVICE := mecha
 PRODUCT_MODEL := ADR6400L
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_mecha BUILD_ID=FRG83D BUILD_DISPLAY_ID=GRJ90 BUILD_FINGERPRINT=verizon_wwe/htc_mecha/mecha/mecha:2.2.1/FRG83D/343953:user/release-keys PRIVATE_BUILD_DESC="1.70.605.0 CL343953 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_mecha BUILD_ID=FRG83D BUILD_DISPLAY_ID=GWK74 BUILD_FINGERPRINT=verizon_wwe/htc_mecha/mecha/mecha:2.2.1/FRG83D/343953:user/release-keys PRIVATE_BUILD_DESC="1.70.605.0 CL343953 release-keys"
 
 # Extra Mecha overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/mecha
@@ -35,10 +35,10 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-Thunderbolt
+            ro.modversion=CyanogenMod-7.1.0-Thunderbolt
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-Thunderbolt-KANG
+            ro.modversion=CyanogenMod-7.1.0-Thunderbolt-KANG
     endif
 endif
 

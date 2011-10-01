@@ -15,7 +15,7 @@ PRODUCT_BRAND := htc_europe
 PRODUCT_DEVICE := saga
 PRODUCT_MODEL := HTC Desire S
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_saga BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ90 BUILD_FINGERPRINT=htc_europe/htc_saga/saga:2.3.3/GRI40/78999:user/release-keys PRIVATE_BUILD_DESC="1.47.401.4 CL78999 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_saga BUILD_ID=GRI40 BUILD_DISPLAY_ID=GWK74 BUILD_FINGERPRINT=htc_europe/htc_saga/saga:2.3.3/GRI40/78999:user/release-keys PRIVATE_BUILD_DESC="1.47.401.4 CL78999 release-keys"
 
 # Build kernel
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
@@ -40,10 +40,10 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-DesireS
+            ro.modversion=CyanogenMod-7.1.0-DesireS
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-DesireS-KANG
+            ro.modversion=CyanogenMod-7.1.0-DesireS-KANG
     endif
 endif
 
