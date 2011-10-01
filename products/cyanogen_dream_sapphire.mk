@@ -38,23 +38,8 @@ PRODUCT_COPY_FILES += \
 #
 # Set ro.modversion
 #
-<<<<<<< HEAD
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.modversion=CyanogenMod-7.1.0-$(shell date +%m%d%Y)-6355Sapphire
-=======
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-DS
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-DS
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-DS-KANG
-    endif
-endif
->>>>>>> cm/gingerbread
 
 # Use the audio profile hack
 WITH_DS_HTCACOUSTIC_HACK := true
